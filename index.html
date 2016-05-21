@@ -56,7 +56,7 @@
   &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"&gt;
   &lt;link rel="stylesheet" href="dist/css/bootstrap-submenu.min.css"&gt;
 
-  &lt;script src="https://code.jquery.com/jquery-2.2.3.min.js" defer&gt;&lt;/script&gt;
+  &lt;script src="https://code.jquery.com/jquery-2.2.4.min.js" defer&gt;&lt;/script&gt;
   &lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" defer&gt;&lt;/script&gt;
   &lt;script src="dist/js/bootstrap-submenu.min.js" defer&gt;&lt;/script&gt;
 &lt;/head&gt;
@@ -75,13 +75,16 @@ $('[data-submenu]').submenupicker();</code></pre>
     <h2 id="html-examples">Examples</h2>
 
 <h3>Dropdown</h3>
-<h4>With button</h4>
-<div class="dropdown m-b">
-  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" data-submenu>
-    Dropdown <span class="caret"></span>
-  </button>
 
-  <ul class="dropdown-menu">
+<h4>With button</h4>
+<div class="row">
+  <div class="col-sm-4 col-sm-offset-2 m-b">
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" data-submenu>
+        Dropdown <span class="caret"></span>
+      </button>
+
+      <ul class="dropdown-menu">
   <li class="dropdown-submenu">
   <a tabindex="0">Action</a>
 
@@ -124,16 +127,71 @@ $('[data-submenu]').submenupicker();</code></pre>
 <li><a tabindex="0">Separated link</a></li>
 </ul>
 
+    </div>
+  </div>
+
+  <div class="col-sm-4 m-b">
+    <div class="dropdown pull-right">
+      <button class="btn btn-default" type="button" data-toggle="dropdown" data-submenu>
+        Dropdown <span class="caret"></span>
+      </button>
+
+      <ul class="dropdown-menu dropdown-menu-right">
+  <li class="dropdown-submenu">
+  <a tabindex="0">Action</a>
+
+  <ul class="dropdown-menu">
+    <li><a tabindex="0">Sub action</a></li>
+    <li class="dropdown-submenu">
+      <a tabindex="0">Another sub action</a>
+
+      <ul class="dropdown-menu">
+        <li><a tabindex="0">Sub action</a></li>
+        <li><a tabindex="0">Another sub action</a></li>
+        <li><a tabindex="0">Something else here</a></li>
+      </ul>
+    </li>
+    <li><a tabindex="0">Something else here</a></li>
+    <li class="disabled"><a tabindex="-1">Disabled action</a></li>
+    <li class="dropdown-submenu">
+      <a tabindex="0">Another action</a>
+
+      <ul class="dropdown-menu">
+        <li><a tabindex="0">Sub action</a></li>
+        <li><a tabindex="0">Another sub action</a></li>
+        <li><a tabindex="0">Something else here</a></li>
+      </ul>
+    </li>
+  </ul>
+</li>
+<li class="dropdown-header">Dropdown header</li>
+<li class="dropdown-submenu">
+  <a tabindex="0">Another action</a>
+
+  <ul class="dropdown-menu">
+    <li><a tabindex="0">Sub action</a></li>
+    <li><a tabindex="0">Another sub action</a></li>
+    <li><a tabindex="0">Something else here</a></li>
+  </ul>
+</li>
+<li><a tabindex="0">Something else here</a></li>
+<li class="divider"></li>
+<li><a tabindex="0">Separated link</a></li>
+</ul>
+    </div>
+  </div>
 </div>
 
 <h4>With button-group</h4>
-<div class="btn-group">
-  <button class="btn btn-default" type="button">Dropdown</button>
-  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" data-submenu>
-    <span class="caret"></span>
-  </button>
+<div class="row">
+  <div class="col-sm-4 col-sm-offset-2 m-b">
+    <div class="btn-group">
+      <button class="btn btn-default" type="button">Dropdown</button>
+      <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" data-submenu>
+        <span class="caret"></span>
+      </button>
 
-  <ul class="dropdown-menu">
+      <ul class="dropdown-menu">
   <li class="dropdown-submenu">
   <a tabindex="0">Action</a>
 
@@ -175,15 +233,17 @@ $('[data-submenu]').submenupicker();</code></pre>
 <li class="divider"></li>
 <li><a tabindex="0">Separated link</a></li>
 </ul>
-</div>
+    </div>
+  </div>
 
-<h4>With button (right align)</h4>
-<div class="dropdown m-b">
-  <button class="btn btn-default" type="button" data-toggle="dropdown" data-submenu>
-    Dropdown <span class="caret"></span>
-  </button>
+  <div class="col-sm-4 m-b">
+    <div class="btn-group pull-right">
+      <button class="btn btn-default" type="button">Dropdown</button>
+      <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" data-submenu>
+        <span class="caret"></span>
+      </button>
 
-  <ul class="dropdown-menu dropdown-menu-right">
+      <ul class="dropdown-menu dropdown-menu-right">
   <li class="dropdown-submenu">
   <a tabindex="0">Action</a>
 
@@ -225,16 +285,21 @@ $('[data-submenu]').submenupicker();</code></pre>
 <li class="divider"></li>
 <li><a tabindex="0">Separated link</a></li>
 </ul>
+    </div>
+  </div>
 </div>
 
 <h3>Dropup</h3>
-<h4>With button</h4>
-<div class="dropup m-b">
-  <button class="btn btn-default" type="button" data-toggle="dropdown" data-submenu>
-    Dropup <span class="caret"></span>
-  </button>
 
-  <ul class="dropdown-menu">
+<h4>With button</h4>
+<div class="row">
+  <div class="col-sm-4 col-sm-offset-2 m-b">
+    <div class="dropup">
+      <button class="btn btn-default" type="button" data-toggle="dropdown" data-submenu>
+        Dropup <span class="caret"></span>
+      </button>
+
+      <ul class="dropdown-menu">
   <li class="dropdown-submenu">
   <a tabindex="0">Action</a>
 
@@ -276,16 +341,71 @@ $('[data-submenu]').submenupicker();</code></pre>
 <li class="divider"></li>
 <li><a tabindex="0">Separated link</a></li>
 </ul>
+    </div>
+  </div>
+
+  <div class="col-sm-4 m-b">
+    <div class="dropup pull-right">
+      <button class="btn btn-default" type="button" data-toggle="dropdown" data-submenu>
+        Dropup <span class="caret"></span>
+      </button>
+
+      <ul class="dropdown-menu dropdown-menu-right">
+  <li class="dropdown-submenu">
+  <a tabindex="0">Action</a>
+
+  <ul class="dropdown-menu">
+    <li><a tabindex="0">Sub action</a></li>
+    <li class="dropdown-submenu">
+      <a tabindex="0">Another sub action</a>
+
+      <ul class="dropdown-menu">
+        <li><a tabindex="0">Sub action</a></li>
+        <li><a tabindex="0">Another sub action</a></li>
+        <li><a tabindex="0">Something else here</a></li>
+      </ul>
+    </li>
+    <li><a tabindex="0">Something else here</a></li>
+    <li class="disabled"><a tabindex="-1">Disabled action</a></li>
+    <li class="dropdown-submenu">
+      <a tabindex="0">Another action</a>
+
+      <ul class="dropdown-menu">
+        <li><a tabindex="0">Sub action</a></li>
+        <li><a tabindex="0">Another sub action</a></li>
+        <li><a tabindex="0">Something else here</a></li>
+      </ul>
+    </li>
+  </ul>
+</li>
+<li class="dropdown-header">Dropdown header</li>
+<li class="dropdown-submenu">
+  <a tabindex="0">Another action</a>
+
+  <ul class="dropdown-menu">
+    <li><a tabindex="0">Sub action</a></li>
+    <li><a tabindex="0">Another sub action</a></li>
+    <li><a tabindex="0">Something else here</a></li>
+  </ul>
+</li>
+<li><a tabindex="0">Something else here</a></li>
+<li class="divider"></li>
+<li><a tabindex="0">Separated link</a></li>
+</ul>
+    </div>
+  </div>
 </div>
 
 <h4>With button-group</h4>
-<div class="btn-group dropup">
-  <button class="btn btn-default" type="button">Dropup</button>
-  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" data-submenu>
-    <span class="caret"></span>
-  </button>
+<div class="row">
+  <div class="col-sm-4 col-sm-offset-2 m-b">
+    <div class="btn-group dropup">
+      <button class="btn btn-default" type="button">Dropup</button>
+      <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" data-submenu>
+        <span class="caret"></span>
+      </button>
 
-  <ul class="dropdown-menu">
+      <ul class="dropdown-menu">
   <li class="dropdown-submenu">
   <a tabindex="0">Action</a>
 
@@ -327,15 +447,17 @@ $('[data-submenu]').submenupicker();</code></pre>
 <li class="divider"></li>
 <li><a tabindex="0">Separated link</a></li>
 </ul>
-</div>
+    </div>
+  </div>
 
-<h4>With button (right align)</h4>
-<div class="dropup m-b">
-  <button class="btn btn-default" type="button" data-toggle="dropdown" data-submenu>
-    Dropup <span class="caret"></span>
-  </button>
+  <div class="col-sm-4 m-b">
+    <div class="btn-group dropup pull-right">
+      <button class="btn btn-default" type="button">Dropup</button>
+      <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" data-submenu>
+        <span class="caret"></span>
+      </button>
 
-  <ul class="dropdown-menu dropdown-menu-right">
+      <ul class="dropdown-menu dropdown-menu-right">
   <li class="dropdown-submenu">
   <a tabindex="0">Action</a>
 
@@ -377,6 +499,8 @@ $('[data-submenu]').submenupicker();</code></pre>
 <li class="divider"></li>
 <li><a tabindex="0">Separated link</a></li>
 </ul>
+    </div>
+  </div>
 </div>
 
 <h3>Navbar</h3>
