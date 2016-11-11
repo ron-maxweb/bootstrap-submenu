@@ -61,19 +61,23 @@
   $.extend(SubmenuItem.prototype, Item.prototype, {
     init: function() {
       this.$element.on({
-        click: $.proxy(this, 'click'),
-        keydown: $.proxy(this, 'keydown')
+        click:     $.proxy(this, 'click'),
+        keydown:   $.proxy(this, 'keydown'),
+        mouseover: $.proxy(this, 'mouseover')
       });
 
-      this.$main.on('hide.bs.submenu', $.proxy(this, 'hide'));
+      this.$main.on('hide.bs.submenu, mouseleave', $.proxy(this, 'hide'));
     },
-    click: function(event) {
+    click: function() {
       // Fix a[href="#"]. For community
-      event.preventDefault();
+      /*event.preventDefault();
 
       event.stopPropagation();
 
-      this.toggle();
+      this.toggle();*/
+    },
+    mouseover: function() { // added mouseover function
+      this.open();
     },
     hide: function(event) {
       // Stop event bubbling

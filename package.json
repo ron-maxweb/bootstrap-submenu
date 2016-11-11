@@ -1,6 +1,6 @@
 {
-  "name": "bootstrap-submenu",
-  "version": "2.0.4",
+  "name": "bootstrap-submenu-hover",
+  "version": "2.0.5",
   "description": "Bootstrap Sub-Menus",
   "keywords": [
     "bootstrap",
@@ -8,12 +8,12 @@
     "jquery-plugin",
     "submenu"
   ],
-  "homepage": "https://vsn4ik.github.io/bootstrap-submenu/",
+  "homepage": "https://github.com/ron-maxweb/bootstrap-submenu/",
   "author": {
     "name": "Vasily A.",
     "url": "https://github.com/vsn4ik"
   },
-  "repository": "vsn4ik/bootstrap-submenu",
+  "repository": "ron-maxweb/bootstrap-submenu",
   "license": "MIT",
   "files": [
     "dist",

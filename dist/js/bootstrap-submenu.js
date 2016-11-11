@@ -1,5 +1,5 @@
 /*!
- * Bootstrap-submenu v2.0.4 (https://vsn4ik.github.io/bootstrap-submenu/)
+ * Bootstrap-submenu-hover v2.0.5 (https://github.com/ron-maxweb/bootstrap-submenu/)
  * Copyright 2014-2016 Vasily A. (https://github.com/vsn4ik)
  * Licensed under the MIT license
  */
@@ -67,19 +67,23 @@
   $.extend(SubmenuItem.prototype, Item.prototype, {
     init: function() {
       this.$element.on({
-        click: $.proxy(this, 'click'),
-        keydown: $.proxy(this, 'keydown')
+        click:     $.proxy(this, 'click'),
+        keydown:   $.proxy(this, 'keydown'),
+        mouseover: $.proxy(this, 'mouseover')
       });
 
-      this.$main.on('hide.bs.submenu', $.proxy(this, 'hide'));
+      this.$main.on('hide.bs.submenu, mouseleave', $.proxy(this, 'hide'));
     },
-    click: function(event) {
+    click: function() {
       // Fix a[href="#"]. For community
-      event.preventDefault();
+      /*event.preventDefault();
 
       event.stopPropagation();
 
-      this.toggle();
+      this.toggle();*/
+    },
+    mouseover: function() { // added mouseover function
+      this.open();
     },
     hide: function(event) {
       // Stop event bubbling
