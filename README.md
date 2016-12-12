@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/npm/l/bootstrap-submenu-hover.svg)][license]
 [![npm version](https://img.shields.io/npm/v/bootstrap-submenu-hover.svg)](https://www.npmjs.com/package/bootstrap-submenu-hover)
 [![Build Status](https://img.shields.io/travis/ron-maxweb/bootstrap-submenu.svg)](https://travis-ci.org/ron-maxweb/bootstrap-submenu)
-[![devDependency Status](https://david-dm.org/ron-maxweb/bvootstrap-submenu.svg)](https://david-dm.org/ron-maxweb/bvootstrap-submenu)
+[![devDependency Status](https://david-dm.org/ron-maxweb/bootstrap-submenu.svg)](https://david-dm.org/ron-maxweb/bootstrap-submenu)
 
 
 ## Quick start
