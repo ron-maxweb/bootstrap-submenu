@@ -4,7 +4,7 @@
 
 $(function() {
   $.ajax({
-    url: 'https://api.github.com/repos/vsn4ik/bootstrap-submenu',
+    url: 'https://api.github.com/repos/ron-maxweb/bootstrap-submenu',
     success: function(data) {
       // XSS check
       if (typeof data.stargazers_count != 'number') {
